@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+.sites-runtime/
+artifacts/private/
+__pycache__/
+.pytest_cache/
+.gltest-artifacts/
+*.pyc
+*.tsbuildinfo
+*.log
+
+.vercel/
+.openai/
+.vercel

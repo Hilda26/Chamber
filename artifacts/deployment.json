@@ -1,0 +1,57 @@
+{
+  "address": "0xDacD15170b31c04aC596106937EA7105e0aeBA33",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "deploymentTransaction": "0xe5878871c4486d38aa610f5ec7059b5e1786ec150568f5671e6b6889643c937a",
+  "sourceSha256": "c44b0bb9d1fad02af235f1d83bb4e4ee44c95b7d6b9bb8cb298b9208b490465d",
+  "signer": "0x20181c138e2ce012e6E226266a4ec8D52AfED5Ee",
+  "receipt": {
+    "hash": "0xe5878871c4486d38aa610f5ec7059b5e1786ec150568f5671e6b6889643c937a",
+    "status": 7,
+    "result": 6,
+    "result_name": "MAJORITY_AGREE",
+    "from_address": "0x20181c138e2ce012e6E226266a4ec8D52AfED5Ee",
+    "to_address": "0xDacD15170b31c04aC596106937EA7105e0aeBA33",
+    "last_leader": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+    "consensus_data": {
+      "votes": {
+        "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "agree",
+        "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+        "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "idle",
+        "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "idle",
+        "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "agree"
+      },
+      "leader_receipt": [
+        {
+          "mode": "leader",
+          "execution_result": "SUCCESS",
+          "address": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+          "result_status": "return",
+          "stderr": ""
+        },
+        {
+          "mode": "validator",
+          "execution_result": "SUCCESS",
+          "address": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+          "result_status": "return",
+          "stderr": ""
+        }
+      ]
+    }
+  },
+  "court": {
+    "appeal_seconds": "86400",
+    "cases": "0",
+    "claimable": "0",
+    "deposited": "0",
+    "locked": "0",
+    "max_participants": "8",
+    "response_seconds": "86400",
+    "review_seconds": "172800",
+    "settled": "0",
+    "timeout_seconds": "604800",
+    "version": "1.0.0",
+    "withdrawn": "0"
+  }
+}

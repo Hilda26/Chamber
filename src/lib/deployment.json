@@ -1,0 +1,8 @@
+{
+  "address": "0xDacD15170b31c04aC596106937EA7105e0aeBA33",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "deploymentTransaction": "0xe5878871c4486d38aa610f5ec7059b5e1786ec150568f5671e6b6889643c937a",
+  "sourceSha256": "c44b0bb9d1fad02af235f1d83bb4e4ee44c95b7d6b9bb8cb298b9208b490465d"
+}

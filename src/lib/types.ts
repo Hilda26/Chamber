@@ -1,0 +1,10 @@
+export type Address = `0x${string}`;
+export type Node = { id: string; parent: string; address: string; name: string; scope: string; reward: string; bond: string; state: string; created_at: number; accepted_at: number };
+export type Exhibit = { id: string; node_id: string; author: string; title: string; statement: string; source_url: string; source_hash: string; source_excerpt: string; sha256: string; at: number };
+export type Ruling = { outcome: string; liable_nodes: string[]; reason: string; at: number; appeal_until: number; basis: string };
+export type Phase = { claimant: string; respondent: string; claim: string; requested_outcome: string; bond: string; response_until: number; resolve_until: number; waivers: string[]; previous_ruling?: Ruling; timed_out?: boolean; bond_recipient?: string };
+export type CaseSummary = { id: string; title: string; owner: string; state: string; escrow: string; bond_required: string; created_at: number; deadline: number; participants: number; operators: string[]; exhibits: number; lead_agent: string };
+export type CourtCase = CaseSummary & { mandate: string; nodes: Node[]; evidence: Exhibit[]; delivery: string; review_until: number; dispute: Phase | null; responses: { author: string; statement: string; phase: string; at: number }[]; ruling: Ruling | null; appeal: Phase | null; finalization_waivers: string[]; history: { at: number; actor: string; event: string }[]; settlement: { outcome: string; provider_total: string; owner_credit: string; slashed: string; at: number; distributions: { address: string; node_id: string; reward: string; bond_returned: string; bond_slashed: string }[] } | null };
+export type CourtStats = { cases: string; settled: string; deposited: string; locked: string; claimable: string; withdrawn: string; version: string };
+export type Account = { address: string; claimable: string; adverse_findings: string };
+export type Tx = { hash: string; label: string; account: Address; status: 'SUBMITTED' | 'FINALIZED' | 'FAILED'; at: number; error?: string; scope?: string };

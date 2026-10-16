@@ -1,0 +1,19 @@
+{
+  "network": "GenLayer StudioNet",
+  "contract": "0x59D9940bdc0bcFf12ccFBa39781DD93B6eF81655",
+  "accounts": [
+    "0x23CfbB63196f44cc93EE1C7B1418204C6699ad25",
+    "0x1a82378DBf672D65fA5fCb4483aF75fb96Aac8B3",
+    "0x4e124E8a07c9c67967813B2987926141DE02FD83"
+  ],
+  "steps": [
+    {
+      "function": "create_agreement",
+      "signer": "0x23CfbB63196f44cc93EE1C7B1418204C6699ad25",
+      "hash": "0xcf3d532fe3918973b8601e95dbc5a050659af23435e9c6b0140902bea6461a3b",
+      "value": "10000000000000000",
+      "status": "SUBMITTED"
+    }
+  ],
+  "caseId": "CH-VERIFY-MV9VN469"
+}

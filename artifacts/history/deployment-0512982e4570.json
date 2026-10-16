@@ -1,0 +1,57 @@
+{
+  "address": "0x59D9940bdc0bcFf12ccFBa39781DD93B6eF81655",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "deploymentTransaction": "0xa3daec9fbec65f14deee88a1d06a6f62efc58f000b0901e765de4ef20f1e2738",
+  "sourceSha256": "0512982e45707d0d6a9c28afefe4bfd9e6c9926906617eb0ce91e979d9db3e9d",
+  "signer": "0xE351818234Ba7B5b52d093Cd6644001f6aE3612c",
+  "receipt": {
+    "hash": "0xa3daec9fbec65f14deee88a1d06a6f62efc58f000b0901e765de4ef20f1e2738",
+    "status": 7,
+    "result": 6,
+    "result_name": "MAJORITY_AGREE",
+    "from_address": "0xE351818234Ba7B5b52d093Cd6644001f6aE3612c",
+    "to_address": "0x59D9940bdc0bcFf12ccFBa39781DD93B6eF81655",
+    "last_leader": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+    "consensus_data": {
+      "votes": {
+        "0x3E5ee2507cc167C9925Bf10c67D7986581112024": "agree",
+        "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "agree",
+        "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2": "idle",
+        "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "agree",
+        "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "idle"
+      },
+      "leader_receipt": [
+        {
+          "mode": "leader",
+          "execution_result": "SUCCESS",
+          "address": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+          "result_status": "return",
+          "stderr": ""
+        },
+        {
+          "mode": "validator",
+          "execution_result": "ERROR",
+          "address": "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2",
+          "result_status": "contract_error",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      ]
+    }
+  },
+  "court": {
+    "appeal_seconds": "86400",
+    "cases": "0",
+    "claimable": "0",
+    "deposited": "0",
+    "locked": "0",
+    "max_participants": "8",
+    "response_seconds": "86400",
+    "review_seconds": "172800",
+    "settled": "0",
+    "timeout_seconds": "604800",
+    "version": "1.0.0",
+    "withdrawn": "0"
+  }
+}
