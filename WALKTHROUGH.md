@@ -101,4 +101,3 @@ An owner funds and reviews work. An appointed operator accepts with the exact bo
 Across the completed live tests, thirty transactions finalized and four native withdrawals were verified. Contract wide deposits and withdrawals both total zero point zero five one GEN, with no remaining locked funds or available credits.
 
 Chamber House is live at chamber house dot vercel dot app. Use the public cases to inspect the evidence and settlement, then use your own StudioNet funded wallets for new work.
-

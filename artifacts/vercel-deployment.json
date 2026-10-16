@@ -1,10 +1,14 @@
 {
   "status": "READY",
-  "productionUrl": "https://chamber-omega.vercel.app",
-  "deploymentUrl": "https://chamber-8wru24cuy-auras-projects-2f862c53.vercel.app",
-  "deploymentId": "dpl_6Q2izyitdwC6WLpzYbCuPPJSVQwq",
-  "applicationCommit": "5394c30",
+  "productionUrl": "https://chamber-house.vercel.app",
+  "deploymentUrl": "https://chamber-house-11pxmv3e3-auras-projects-2f862c53.vercel.app",
+  "deploymentId": "dpl_6rUkvogriVEAjokKCaPGLCDTXLsX",
+  "applicationCommit": "e34c06d",
   "hosting": "Vercel static export",
   "continuousGithubIntegration": false,
-  "reason": "Automatic approval review rejected granting ongoing repository access; direct CLI deployment succeeded."
+  "reason": "Automatic approval review rejected granting ongoing repository access; direct CLI deployment succeeded.",
+  "projectName": "chamber-house",
+  "previousOmegaDomainRemoved": true,
+  "oldOmegaUrlHttpStatus": 404,
+  "walkthroughUrl": "https://chamber-house.vercel.app/walkthrough.html"
 }

@@ -1,5 +1,5 @@
 {
-  "status": "VALIDATED",
+  "status": "PASSED",
   "durationSeconds": 515.042,
   "dimensions": [
     1440,
@@ -260,5 +260,26 @@
       ]
     }
   ],
-  "decodeCheck": "PASSED: complete audio and video decoded without errors"
+  "decodeCheck": "PASSED: complete audio and video decoded without errors",
+  "watchUrl": "https://chamber-house.vercel.app/walkthrough.html",
+  "downloadUrl": "https://chamber-house.vercel.app/walkthrough/chamber-house-walkthrough.mp4",
+  "browserPlayback": {
+    "durationSeconds": 515.272472,
+    "width": 1440,
+    "height": 900,
+    "readyState": 4,
+    "playbackAdvanced": true,
+    "chapterSeekVerified": true,
+    "pausedAfterCheck": true,
+    "mediaError": null
+  },
+  "mobilePlayer": {
+    "viewport": 390,
+    "documentWidth": 375,
+    "horizontalOverflow": false
+  },
+  "sha256": "7d9bc2252a4e5f2503a0338fd3da75a0a21e17ba279c4107ed7c9f1bafd1a91d",
+  "hostedFileMatchesValidatedLocalFile": true,
+  "httpStatus": 200,
+  "contentType": "video/mp4"
 }

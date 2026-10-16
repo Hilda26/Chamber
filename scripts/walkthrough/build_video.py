@@ -64,7 +64,7 @@ shutil.copyfile(WORK/'captures/01/00000.png',PUBLIC/'poster.png')
 transcript='# Chamber House walkthrough\n\nRecorded navigation and form entry in the deployed application, with synthetic voice narration. The hearing and settlement use existing live StudioNet integration cases. New wallet transactions are not signed in this recording.\n\n'
 for s,c in zip(scenes,chapters):
  transcript+=f"## {stamp(c['start'])[:8]} - {s['title']}\n\n"+'\n\n'.join(s['sentences'])+'\n\n'
-(ROOT/'WALKTHROUGH.md').write_text(transcript,encoding='utf-8')
+(ROOT/'WALKTHROUGH.md').write_text(transcript.rstrip()+'\n',encoding='utf-8')
 report={'status':'RENDERED','durationSeconds':round(offset,3),'dimensions':[1440,900],'outputBytes':final.stat().st_size,'method':'Continuous timed browser screenshots captured through cua_repl, including real navigation, scrolling and form entry; synchronized offline narration; optional captions.','walletSigning':'Not recorded; existing completed live integration cases are inspected.','chapters':chapters}
 (ROOT/'artifacts/walkthrough-video.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 print('WALKTHROUGH_RENDERED',round(offset,2),final.stat().st_size,flush=True)
