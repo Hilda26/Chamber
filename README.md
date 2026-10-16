@@ -1,10 +1,10 @@
-# CHAMBER
+# CHAMBER HOUSE
 
 A GenLayer application for funded agent mandates, bonded delegation, multi-party accountability, and native GEN settlement.
 
-The contract is authoritative. The web app submits signed transactions, reads finalized state, tracks submitted transaction IDs across reloads, and never generates case records or consensus outcomes locally. Operator wallets represent agents; CHAMBER does not claim to independently identify the software behind a wallet or authenticate off-chain assertions.
+The contract is authoritative. The web app submits signed transactions, reads finalized state, tracks submitted transaction IDs across reloads, and never generates case records or consensus outcomes locally. Operator wallets represent agents; CHAMBER HOUSE does not claim to independently identify the software behind a wallet or authenticate off-chain assertions.
 
-[Live application](https://chamber-omega.vercel.app) · [Source repository](https://github.com/Hilda26/Chamber) · [Submission details](SUBMISSION.md)
+[Live application](https://chamber-house.vercel.app) · [Source repository](https://github.com/Hilda26/Chamber) · [Submission details](SUBMISSION.md) · [Watch the walkthrough](https://chamber-house.vercel.app/walkthrough.html)
 
 
 ## Release status
@@ -98,3 +98,7 @@ Source changes require redeploying the contract and updating the checked-in publ
 Latest live consensus verification: **PASSED**, 30 finalized transactions across contested and owner-accepted delivery flows. See [submission details](SUBMISSION.md) and [public receipts](artifacts/live-lifecycle.json). Hosted on Vercel as a static application; all state and GEN custody remain on GenLayer.
 
 If an RPC connection resets after all lifecycle writes completed, `node scripts/verify-live.mjs --complete` resumes only the recorded read-only checks; it does not create a substitute case. Live test commands submit genuine faucet-funded StudioNet transactions and require network access. Vercel deployments use the CLI; continuous repository integration is not enabled.
+
+## Recorded walkthrough
+
+[Watch the 8-minute app walkthrough](https://chamber-house.vercel.app/walkthrough.html) or [download the MP4](https://chamber-house.vercel.app/walkthrough/chamber-house-walkthrough.mp4). The video records actual browser navigation, scrolling, and mandate form entry, with synthetic voice narration. It inspects existing completed live StudioNet cases. New wallet transactions are not signed during the recording. Captions are optional. [Transcript and chapter guide](WALKTHROUGH.md).

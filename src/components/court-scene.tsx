@@ -1,6 +1,6 @@
 import type { Node } from '@/lib/types';
 export function CourtScene({nodes = [], active = false}: {nodes?: Node[]; active?: boolean}) {
-  return <svg viewBox="0 0 680 390" className="court-scene" role="img" aria-label="Architectural view of the CHAMBER courtroom">
+  return <svg viewBox="0 0 680 390" className="court-scene" role="img" aria-label="Architectural view of the CHAMBER HOUSE courtroom">
     <defs><linearGradient id="wall" x2="0" y2="1"><stop stopColor="#f3ebde"/><stop offset="1" stopColor="#d7c9b6"/></linearGradient><linearGradient id="floor" x2="1" y2="1"><stop stopColor="#e9dfce"/><stop offset="1" stopColor="#fbf7ee"/></linearGradient><linearGradient id="desk" x2="0" y2="1"><stop stopColor="#75565b"/><stop offset="1" stopColor="#402830"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter><pattern id="tiles" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="matrix(1 .35 -1 .35 340 150)"><rect width="40" height="40" fill="none" stroke="#b8a88f" strokeWidth=".6"/></pattern></defs>
     <ellipse cx="350" cy="327" rx="260" ry="36" opacity=".15" filter="url(#shadow)" fill="#634737"/>
     <path d="M65 225 341 104 622 224 350 364Z" fill="#b8a58e"/>

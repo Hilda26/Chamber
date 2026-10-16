@@ -1,12 +1,14 @@
-# CHAMBER — submission parameters
+# CHAMBER HOUSE — submission parameters
 
 | Field | Value |
 | --- | --- |
-| Project name | CHAMBER |
+| Project name | CHAMBER HOUSE |
 | Tagline | Accountability for the agent economy. |
 | Category | Agent infrastructure · Intelligent Contracts · Dispute resolution |
-| Live application | https://chamber-omega.vercel.app |
-| Live consensus case | https://chamber-omega.vercel.app/#case=CH-VERIFY-MVAK3DBM |
+| Walkthrough video | https://chamber-house.vercel.app/walkthrough.html |
+| Video download | https://chamber-house.vercel.app/walkthrough/chamber-house-walkthrough.mp4 |
+| Live application | https://chamber-house.vercel.app |
+| Live consensus case | https://chamber-house.vercel.app/#case=CH-VERIFY-MVAK3DBM |
 | Repository | https://github.com/Hilda26/Chamber |
 | Network | GenLayer StudioNet, chain ID 61999 |
 | Native currency | GEN, 18 decimals; faucet-funded test GEN on StudioNet |
@@ -26,11 +28,11 @@ Sources: [GenLayer networks](https://docs.genlayer.com/developers/networks), [of
 
 ## Short description
 
-CHAMBER gives agent operators a shared accountability layer: funded mandates, bonded delegation, public evidence, GenLayer consensus judgments, and native GEN settlement in a courtroom workspace.
+CHAMBER HOUSE gives agent operators a shared accountability layer: funded mandates, bonded delegation, public evidence, GenLayer consensus judgments, and native GEN settlement in a courtroom workspace.
 
 ## Full description
 
-When an agent delegates work, responsibility often disappears between the original instruction, delegated scope, and final delivery. CHAMBER records that chain as an enforceable application agreement. An owner funds the mandate in GEN. Each accepting operator bonds its own scope, and each delegation reserves part of the existing reward rather than creating an unfunded promise.
+When an agent delegates work, responsibility often disappears between the original instruction, delegated scope, and final delivery. CHAMBER HOUSE records that chain as an enforceable application agreement. An owner funds the mandate in GEN. Each accepting operator bonds its own scope, and each delegation reserves part of the existing reward rather than creating an unfunded promise.
 
 If a delivery is contested, participants submit signed evidence and responses. GenLayer independently evaluates fulfillment and responsibility for individual accepted participants. Its validated judgment selects a finite outcome and the liable delegation nodes. Deterministic contract rules then allocate the escrow, release or slash bonds, and create credits each recipient can withdraw to its own wallet. One bonded application appeal is available before settlement.
 
@@ -52,7 +54,7 @@ Version 1 takes no additional platform fee. StudioNet deployment uses test GEN; 
 
 ## Distinctive angle
 
-CHAMBER adjudicates responsibility across a funded delegation chain, including individual scopes and bonds. It links the original mandate, each accepted subcontract, signed evidence, and the financial consequence of a finding in one public record. The court is the workspace for a usable settlement protocol.
+CHAMBER HOUSE adjudicates responsibility across a funded delegation chain, including individual scopes and bonds. It links the original mandate, each accepted subcontract, signed evidence, and the financial consequence of a finding in one public record. The court is the workspace for a usable settlement protocol.
 
 ## Reviewer walkthrough
 
@@ -62,7 +64,7 @@ CHAMBER adjudicates responsibility across a funded delegation chain, including i
 4. Deliver and accept for a normal completion, or open a bonded dispute and collect participant responses/readiness before requesting adjudication.
 5. Finalize after the application appeal conditions are satisfied, then have each credited wallet withdraw.
 
-All evidence is public. Wallet operators identify their own agents; the application does not authenticate off-chain software identity. CHAMBER judgments govern the application escrow, rather than claiming authority as a state court.
+All evidence is public. Wallet operators identify their own agents; the application does not authenticate off-chain software identity. CHAMBER HOUSE judgments govern the application escrow, rather than claiming authority as a state court.
 
 ## Verification scope
 
@@ -82,7 +84,7 @@ Evidence: [`artifacts/live-lifecycle.json`](artifacts/live-lifecycle.json). Brow
 
 ## Additional live normal-completion test
 
-Case: [CH-DELIVERY-MVAKRX74](https://chamber-omega.vercel.app/#case=CH-DELIVERY-MVAKRX74).
+Case: [CH-DELIVERY-MVAKRX74](https://chamber-house.vercel.app/#case=CH-DELIVERY-MVAKRX74).
 
 Nine further transactions finalized successfully. The owner accepted the recorded delivery; the lead received 0.004 GEN reward plus its 0.001 GEN bond, and the delegated operator received 0.002 GEN reward plus its 0.001 GEN bond. Both native wallet balance increases were verified. The case required no consensus judgment because the owner accepted it directly. Evidence: [`artifacts/live-delivery.json`](artifacts/live-delivery.json).
 
@@ -94,7 +96,7 @@ The public Vercel production URL returns HTTP 200 without authentication. The do
 
 ## Submission copy
 
-**One-sentence pitch:** CHAMBER makes delegated agent work accountable through funded mandates, individual GEN bonds, GenLayer consensus judgments, and verifiable settlement.
+**One-sentence pitch:** CHAMBER HOUSE makes delegated agent work accountable through funded mandates, individual GEN bonds, GenLayer consensus judgments, and verifiable settlement.
 
 **Problem:** Agent work can pass through multiple operators while instructions, responsibility, and payment expectations become disconnected.
 

@@ -1,0 +1,286 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:05.172
+Welcome to Chamber House, the court of agent accountability. This is the working app at
+
+00:00:05.172 --> 00:00:09.343
+chamber house dot vercel dot app.
+
+00:00:09.893 --> 00:00:13.654
+The court opens with a public docket and live contract accounting. You can inspect records
+
+00:00:13.654 --> 00:00:17.416
+before connecting a wallet.
+
+00:00:17.966 --> 00:00:23.260
+The five matters shown include completed live integration tests. Two mandates settled, and
+
+00:00:23.260 --> 00:00:28.554
+the remaining matters were cancelled. Their GEN deposits, bonds, and withdrawals were
+
+00:00:28.554 --> 00:00:33.848
+actually executed on GenLayer StudioNet.
+
+00:00:34.398 --> 00:00:40.299
+This walkthrough uses those public records and the real input form. StudioNet uses test GEN.
+
+00:00:40.299 --> 00:00:46.200
+New financial transactions are not signed during this recording.
+
+00:00:48.750 --> 00:00:53.801
+Select Establish a mandate to define a new agreement. Start with a clear matter title and
+
+00:00:53.801 --> 00:00:58.852
+original instructions that state the deliverable and acceptance criteria.
+
+00:00:59.402 --> 00:01:03.601
+The lead agent name is a label. The lead operator wallet is the separate address that must
+
+00:01:03.601 --> 00:01:07.800
+accept responsibility and post the bond.
+
+00:01:08.350 --> 00:01:13.997
+Payment escrow funds all reward shares. Bond per accepted agent is a separate amount each
+
+00:01:13.997 --> 00:01:19.645
+accepting operator must deposit. Here, the example values are zero point zero one GEN for
+
+00:01:19.645 --> 00:01:25.292
+escrow and zero point zero zero one GEN for the bond.
+
+00:01:25.842 --> 00:01:29.788
+Choose a delivery deadline and review the settlement rules. Funding requires your connected
+
+00:01:29.788 --> 00:01:33.733
+owner wallet and its signature. These example fields are inspected without submitting an
+
+00:01:33.733 --> 00:01:37.679
+agreement.
+
+00:01:40.228 --> 00:01:44.244
+Close the form to return to the public court. Search matters by case number, title, or
+
+00:01:44.244 --> 00:01:48.261
+participant information.
+
+00:01:48.811 --> 00:01:53.732
+Enter the verification case number to isolate the contested mandate. The row shows its
+
+00:01:53.732 --> 00:01:58.654
+settled status, funded escrow, and two accepted agents.
+
+00:01:59.204 --> 00:02:04.505
+Open the matter to enter the case room. The header preserves the original owner, escrow,
+
+00:02:04.505 --> 00:02:09.806
+required agent bond, delivery deadline, and acceptance count.
+
+00:02:10.356 --> 00:02:15.792
+The five tabs divide the record into authority, exhibits, hearing, settlement, and activity.
+
+00:02:15.792 --> 00:02:21.229
+These views read the deployed contract rather than creating local case data.
+
+00:02:23.779 --> 00:02:29.330
+Authority connects the original mandate to each accepted scope. The owner appointed the lead
+
+00:02:29.330 --> 00:02:34.881
+verification operator, which delegated citation checking to a second operator.
+
+00:02:35.431 --> 00:02:40.657
+Select the child agent to read its specific responsibility. Its accepted scope required
+
+00:02:40.657 --> 00:02:45.883
+preserving the explicit documentation URLs in the contribution.
+
+00:02:46.433 --> 00:02:50.789
+The child received zero point zero zero four GEN from the funded reward. The lead retained
+
+00:02:50.789 --> 00:02:55.144
+zero point zero zero six GEN. Delegation moved an existing share rather than creating extra
+
+00:02:55.144 --> 00:02:59.500
+escrow.
+
+00:03:00.051 --> 00:03:05.266
+Select the lead again to compare its original obligations with the child scope.
+
+00:03:05.266 --> 00:03:10.482
+Responsibility is assessed against what each operator actually accepted. A wallet identifies
+
+00:03:10.482 --> 00:03:15.697
+the operator, not independently verified software identity.
+
+00:03:18.247 --> 00:03:22.908
+Open Exhibits to inspect the evidence supporting the case. The signed citation handoff is
+
+00:03:22.908 --> 00:03:27.570
+attributed to the child operator and linked to agent two.
+
+00:03:28.120 --> 00:03:33.398
+The statement explicitly acknowledges that every source URL was omitted. Its author and
+
+00:03:33.398 --> 00:03:38.677
+recording time remain visible, along with a digest for the recorded exhibit.
+
+00:03:39.227 --> 00:03:44.672
+An eligible participant can also submit an optional public HTTPS source. The contract
+
+00:03:44.672 --> 00:03:50.118
+fetches its content, records a digest, and preserves an excerpt. That fetched-source branch
+
+00:03:50.118 --> 00:03:55.563
+was not exercised in this particular live case.
+
+00:03:56.113 --> 00:04:00.887
+The record is public. A content digest establishes the recorded material, while the hearing
+
+00:04:00.887 --> 00:04:05.661
+must still evaluate what that material proves.
+
+00:04:08.211 --> 00:04:12.920
+Open Hearing to follow the disagreement. The owner requested a failed outcome because the
+
+00:04:12.920 --> 00:04:17.629
+delivery lacked the three required documentation URLs.
+
+00:04:18.179 --> 00:04:23.535
+The lead and delegated operator each submitted a signed response acknowledging the missing
+
+00:04:23.535 --> 00:04:28.891
+citations. Every accepted participant and the owner then marked readiness to advance.
+
+00:04:29.441 --> 00:04:33.758
+The GenLayer consensus section contains the real judgment from the completed integration
+
+00:04:33.758 --> 00:04:38.076
+run. It found the mandate not fulfilled and identified agents one and two as liable for
+
+00:04:38.076 --> 00:04:42.393
+their own accepted responsibilities.
+
+00:04:42.942 --> 00:04:47.611
+The explanation cites the child exhibit and the lead delivery and response. Independent
+
+00:04:47.611 --> 00:04:52.280
+evaluation determines the financial outcome and liable node IDs. Contract rules then
+
+00:04:52.280 --> 00:04:56.949
+calculate the actual amounts.
+
+00:04:59.499 --> 00:05:05.290
+Open Settlement to trace the financial consequence of that judgment. Failed delivery
+
+00:05:05.290 --> 00:05:11.081
+produces zero provider reward and returns the zero point zero one GEN escrow to the owner.
+
+00:05:11.631 --> 00:05:18.475
+The two supported liability findings slash two agent bonds, each worth zero point zero zero
+
+00:05:18.475 --> 00:05:25.318
+one GEN. That produces an owner escrow refund plus slashes of zero point zero one two GEN.
+
+00:05:25.868 --> 00:05:30.280
+The separate dispute bond of zero point zero zero one GEN also returned to the owner because
+
+00:05:30.280 --> 00:05:34.693
+the final outcome matched the requested outcome. Total owner withdrawal was zero point zero
+
+00:05:34.693 --> 00:05:39.105
+one three GEN.
+
+00:05:39.655 --> 00:05:43.751
+The live test verified that native GEN reached the recipient wallet. Settlement creates a
+
+00:05:43.751 --> 00:05:47.846
+credit first; each credited operator withdraws from its own wallet after successful
+
+00:05:47.846 --> 00:05:51.942
+finalization.
+
+00:05:54.492 --> 00:06:00.078
+Activity lists the recorded proceedings in order, including funding, accepted
+
+00:06:00.078 --> 00:06:05.665
+responsibilities, evidence, responses, the judgment, and settlement.
+
+00:06:06.215 --> 00:06:10.989
+Return to the docket and open the accepted delivery verification case. This second live test
+
+00:06:10.989 --> 00:06:15.763
+followed normal completion without a contested judgment.
+
+00:06:16.312 --> 00:06:21.720
+In its settlement, the full zero point zero zero six GEN reward was divided into zero point
+
+00:06:21.720 --> 00:06:27.129
+zero zero four for the lead and zero point zero zero two for the child.
+
+00:06:27.680 --> 00:06:32.919
+Each operator also recovered its zero point zero zero one GEN performance bond. The verified
+
+00:06:32.919 --> 00:06:38.157
+wallet withdrawals were zero point zero zero five and zero point zero zero three GEN. Owner
+
+00:06:38.157 --> 00:06:43.396
+acceptance produced the fulfilled outcome directly.
+
+00:06:45.946 --> 00:06:52.074
+The Protocol explains the rules users accept when funding a mandate. There is a forty eight
+
+00:06:52.074 --> 00:06:58.203
+hour delivery review period, a twenty four hour response window, and one application appeal.
+
+00:06:58.753 --> 00:07:04.052
+An appeal is available for twenty four hours after the first ruling and requires twice the
+
+00:07:04.052 --> 00:07:09.350
+standard agent bond. It is distinct from GenLayer transaction finality.
+
+00:07:09.900 --> 00:07:15.394
+Unanimous readiness can advance proceedings early. New evidence or responses reset hearing
+
+00:07:15.394 --> 00:07:20.887
+readiness. Stalled initial disputes have a seven day recovery path. An appeal timeout
+
+00:07:20.887 --> 00:07:26.381
+preserves the original ruling and returns the unreviewed appeal bond.
+
+00:07:26.932 --> 00:07:31.473
+The network panel identifies StudioNet, chain six one nine nine nine, the deployed address,
+
+00:07:31.473 --> 00:07:36.013
+and the downloadable contract source. StudioNet is a development network whose state can be
+
+00:07:36.013 --> 00:07:40.554
+reset.
+
+00:07:43.104 --> 00:07:47.628
+The Settlements view brings completed matters together. To act on your own mandate or
+
+00:07:47.628 --> 00:07:52.152
+withdraw a credit, connect the wallet that owns that role.
+
+00:07:52.702 --> 00:07:57.054
+An owner funds and reviews work. An appointed operator accepts with the exact bond, then
+
+00:07:57.054 --> 00:08:01.407
+carries out its scope. The interface offers actions according to the connected wallet and
+
+00:08:01.407 --> 00:08:05.759
+current case state.
+
+00:08:06.308 --> 00:08:11.680
+Across the completed live tests, thirty transactions finalized and four native withdrawals
+
+00:08:11.680 --> 00:08:17.053
+were verified. Contract wide deposits and withdrawals both total zero point zero five one
+
+00:08:17.053 --> 00:08:22.425
+GEN, with no remaining locked funds or available credits.
+
+00:08:22.975 --> 00:08:28.234
+Chamber House is live at chamber house dot vercel dot app. Use the public cases to inspect
+
+00:08:28.234 --> 00:08:33.492
+the evidence and settlement, then use your own StudioNet funded wallets for new work.

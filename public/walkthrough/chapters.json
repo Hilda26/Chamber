@@ -1,0 +1,252 @@
+[
+  {
+    "id": "01",
+    "title": "The court and live accounting",
+    "start": 0,
+    "duration": 47.75,
+    "recordedFrames": 184,
+    "actions": [
+      {
+        "at": 18.165,
+        "label": "Scroll through the public docket"
+      },
+      {
+        "at": 41.377,
+        "label": "Return to the court overview"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "title": "Establishing a funded mandate",
+    "start": 47.75,
+    "duration": 51.478,
+    "recordedFrames": 79,
+    "actions": [
+      {
+        "at": 1.575,
+        "label": "Open mandate form"
+      },
+      {
+        "at": 11.418,
+        "label": "Type matter title"
+      },
+      {
+        "at": 15.559,
+        "label": "Paste original mandate instructions"
+      },
+      {
+        "at": 24.883,
+        "label": "Enter lead operator details"
+      },
+      {
+        "at": 35.931,
+        "label": "Enter illustrative escrow and bond"
+      },
+      {
+        "at": 44.607,
+        "label": "Inspect deadline and agreement rules"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "title": "Finding a recorded matter",
+    "start": 99.228,
+    "duration": 43.551,
+    "recordedFrames": 118,
+    "actions": [
+      {
+        "at": 2.718,
+        "label": "Close the unsigned mandate form"
+      },
+      {
+        "at": 11.914,
+        "label": "Search the public docket"
+      },
+      {
+        "at": 20.145,
+        "label": "Open the finalized verification case"
+      },
+      {
+        "at": 33.537,
+        "label": "Read recorded authority and financial terms"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Following the delegation chain",
+    "start": 142.779,
+    "duration": 54.468,
+    "recordedFrames": 158,
+    "actions": [
+      {
+        "at": 10.507,
+        "label": "Select the accepted child operator"
+      },
+      {
+        "at": 20.245,
+        "label": "Read child scope and reserved reward"
+      },
+      {
+        "at": 37.546,
+        "label": "Compare the lead original obligations"
+      },
+      {
+        "at": 44.349,
+        "label": "Read lead scope and retained reward"
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "title": "Inspecting signed evidence",
+    "start": 197.247,
+    "duration": 49.964,
+    "recordedFrames": 135,
+    "actions": [
+      {
+        "at": 5.314,
+        "label": "Open the signed exhibit"
+      },
+      {
+        "at": 15.462,
+        "label": "Inspect signed attribution and exhibit digest"
+      },
+      {
+        "at": 36.62,
+        "label": "Return to exhibit overview"
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "title": "Reading the GenLayer hearing",
+    "start": 247.211,
+    "duration": 51.288,
+    "recordedFrames": 142,
+    "actions": [
+      {
+        "at": 1.588,
+        "label": "Open the real GenLayer hearing"
+      },
+      {
+        "at": 20.465,
+        "label": "Read responses and consensus rationale"
+      },
+      {
+        "at": 43.339,
+        "label": "Inspect judgment in the full hearing context"
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "title": "Tracing the contested settlement",
+    "start": 298.499,
+    "duration": 54.993,
+    "recordedFrames": 150,
+    "actions": [
+      {
+        "at": 1.388,
+        "label": "Open contested settlement accounting"
+      },
+      {
+        "at": 28.221,
+        "label": "Inspect bond recipients and settlement distributions"
+      },
+      {
+        "at": 46.541,
+        "label": "Compare the total GEN figures"
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "title": "Auditing activity and normal completion",
+    "start": 353.492,
+    "duration": 51.454,
+    "recordedFrames": 138,
+    "actions": [
+      {
+        "at": 1.489,
+        "label": "Audit the recorded case activity"
+      },
+      {
+        "at": 9.306,
+        "label": "Scroll the activity record"
+      },
+      {
+        "at": 15.216,
+        "label": "Return to the public docket"
+      },
+      {
+        "at": 19.248,
+        "label": "Clear case search"
+      },
+      {
+        "at": 21.17,
+        "label": "Open the accepted delivery live test"
+      },
+      {
+        "at": 27.471,
+        "label": "Read normal completion settlement"
+      },
+      {
+        "at": 40.237,
+        "label": "Inspect both operator reward and bond payouts"
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "title": "Timing, appeals, and recovery rules",
+    "start": 404.946,
+    "duration": 57.158,
+    "recordedFrames": 146,
+    "actions": [
+      {
+        "at": 1.209,
+        "label": "Open application protocol rules"
+      },
+      {
+        "at": 12.343,
+        "label": "Read delivery, hearing, and settlement rules"
+      },
+      {
+        "at": 29.25,
+        "label": "Read appeal and stalled proceeding rules"
+      },
+      {
+        "at": 45.309,
+        "label": "Inspect the actual network and contract source details"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Using the app and reviewing the proof",
+    "start": 462.104,
+    "duration": 52.938,
+    "recordedFrames": 140,
+    "actions": [
+      {
+        "at": 1.613,
+        "label": "Open completed settlement records"
+      },
+      {
+        "at": 15.601,
+        "label": "Show wallet-specific docket access"
+      },
+      {
+        "at": 29.542,
+        "label": "Return to the verified settled matters"
+      },
+      {
+        "at": 42.493,
+        "label": "Finish at the live court overview"
+      }
+    ]
+  }
+]

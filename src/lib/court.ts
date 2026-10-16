@@ -23,18 +23,18 @@ export function addressArg(value: string) {
 }
 export const publicClient = () => createClient({ chain: studionet, endpoint: deployment.rpc });
 export async function read<T>(functionName: string, args: CalldataEncodable[] = []): Promise<T> {
-  if (!configured) throw new Error('The CHAMBER contract has not been deployed yet.');
+  if (!configured) throw new Error('The CHAMBER HOUSE contract has not been deployed yet.');
   const result = await publicClient().readContract({ address: deployment.address as Address, functionName, args, transactionHashVariant: TransactionHashVariant.LATEST_FINAL });
   return (typeof result === 'string' && /^[\[{]/.test(result) ? JSON.parse(result) : result) as T;
 }
 export async function connectWallet(): Promise<Address> {
-  if (!window.ethereum) throw new Error('Install a compatible browser wallet, then open CHAMBER in that browser to connect.');
+  if (!window.ethereum) throw new Error('Install a compatible browser wallet, then open CHAMBER HOUSE in that browser to connect.');
   const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' }) as Address[];
   if (!accounts[0] || !isAddress(accounts[0])) throw new Error('Your wallet did not return an account.');
   return accounts[0];
 }
 export async function submit(account: Address, functionName: string, args: CalldataEncodable[], value: bigint): Promise<Address> {
-  if (!configured) throw new Error('The CHAMBER contract is unavailable.');
+  if (!configured) throw new Error('The CHAMBER HOUSE contract is unavailable.');
   if (!window.ethereum) throw new Error('Connect a compatible browser wallet.');
   const current = await window.ethereum.request({ method: 'eth_accounts' }) as string[];
   if (current[0]?.toLowerCase() !== account.toLowerCase()) throw new Error('Your wallet account changed. Reconnect before submitting.');
