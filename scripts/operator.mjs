@@ -12,5 +12,7 @@ else{
   if(!process.env.CHAMBER_OPERATOR_PRIVATE_KEY)throw new Error('Set CHAMBER_OPERATOR_PRIVATE_KEY in the process environment.');
   const account=createAccount(process.env.CHAMBER_OPERATOR_PRIVATE_KEY);const client=clientFor(account);
   const hash=await client.writeContract({address:deployment.address,functionName:method,args,value:parseUnits(value,18),consensusMaxRotations:3});
-  console.log('Submitted:',hash);await finalized(client,hash);console.log('Finalized successfully:',hash);
+  console.log('Submitted:',hash);await finalized(client,hash);
+  for(const child of await client.getTriggeredTransactionIds({hash})){await finalized(client,child);console.log('Finalized transfer:',child);}
+  console.log('Finalized successfully:',hash);
 }

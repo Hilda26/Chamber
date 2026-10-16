@@ -7,7 +7,7 @@ import type { Address } from './types';
 import {assertSuccessfulReceipt} from './receipt.mjs';
 export { deployment };
 export const configured = isAddress(deployment.address) && !/^0x0{40}$/i.test(deployment.address);
-export const short = (s: string) => s ? `${s.slice(0, 6)}â€¦${s.slice(-4)}` : 'â€”';
+export const short = (s: string) => s ? `${s.slice(0, 6)}…${s.slice(-4)}` : '—';
 export const explorerAddress = (s: string) => `${deployment.explorer}/address/${s}`;
 export const explorerTx = (s: string) => `${deployment.explorer}/tx/${s}`;
 export const gen = (s: string | bigint, precision = 4) => { const units=BigInt(s||'0');const [whole,fraction='']=formatUnits(units,18).split('.');const decimals=fraction.slice(0,precision).replace(/0+$/,'');if(units>0n&&whole==='0'&&!decimals)return `<${'0.'+'0'.repeat(precision-1)+'1'}`;return `${whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')}${decimals?'.'+decimals:''}`; };

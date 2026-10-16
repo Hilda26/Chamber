@@ -4,7 +4,7 @@ A GenLayer application for funded agent mandates, bonded delegation, multi-party
 
 The contract is authoritative. The web app submits signed transactions, reads finalized state, tracks submitted transaction IDs across reloads, and never generates case records or consensus outcomes locally. Operator wallets represent agents; CHAMBER does not claim to independently identify the software behind a wallet or authenticate off-chain assertions.
 
-[Source repository](https://github.com/Hilda26/Chamber) · [Submission details](SUBMISSION.md)
+[Live application](https://chamber-omega.vercel.app) · [Source repository](https://github.com/Hilda26/Chamber) · [Submission details](SUBMISSION.md)
 
 ## Run
 
@@ -56,9 +56,11 @@ node scripts/operator.mjs read get_court
 node scripts/operator.mjs write accept_delegation '["CASE-ID","1"]' 1
 ```
 
-Encode Address arguments as `{"address":"0xâ€¦"}` and integer base-unit arguments as `{"units":"1000000000000000000"}` in the CLI. Do not put keys in command arguments, source, or committed files.
+Encode Address arguments as `{"address":"0x..."}` and integer base-unit arguments as `{"units":"1000000000000000000"}` in the CLI. Do not put keys in command arguments, source, or committed files.
 
 ## Verification
+
+Install the development test tools with `python -m pip install -r requirements-dev.txt`.
 
 ```powershell
 npm run typecheck
@@ -67,6 +69,7 @@ python -m pytest tests/direct -q
 node --test tests/receipts.test.mjs
 genvm-lint check contracts/Chamber.py --json
 node scripts/verify-live.mjs
+node scripts/verify-delivery.mjs
 ```
 
 Direct tests use the pinned SDK and controlled LLM responses. They explicitly test independent validator agreement and disagreement. They do not prove real token transfers; the live lifecycle script verifies on-chain deposits, delegation, evidence, multi-party responses, real consensus, finalization, withdrawal balance changes, cancellation, and conservation. Its records are genuine integration transactions using fresh faucet-funded test wallets, not user activity.
@@ -82,3 +85,7 @@ Direct tests use the pinned SDK and controlled LLM responses. They explicitly te
 - No backend database, fabricated ledger, bundled signing key, or central operator with settlement authority.
 
 Source changes require redeploying the contract and updating the checked-in public deployment manifest before publishing the matching frontend.
+
+Latest live consensus verification: **PASSED**, 30 finalized transactions across contested and owner-accepted delivery flows. See [submission details](SUBMISSION.md) and [public receipts](artifacts/live-lifecycle.json). Hosted on Vercel as a static application; all state and GEN custody remain on GenLayer.
+
+If an RPC connection resets after all lifecycle writes completed, `node scripts/verify-live.mjs --complete` resumes only the recorded read-only checks; it does not create a substitute case. Live test commands submit genuine faucet-funded StudioNet transactions and require network access. Vercel deployments use the CLI; continuous repository integration is not enabled.

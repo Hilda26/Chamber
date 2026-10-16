@@ -1,0 +1,25 @@
+{
+  "status": "PASSED",
+  "url": "https://chamber-omega.vercel.app",
+  "httpStatus": 200,
+  "contractSourceHttpStatus": 200,
+  "sourceSha256": "c44b0bb9d1fad02af235f1d83bb4e4ee44c95b7d6b9bb8cb298b9208b490465d",
+  "browserChecks": [
+    "Finalized docket and live accounting",
+    "Public search",
+    "Authority chain",
+    "Signed evidence",
+    "GenLayer consensus ruling",
+    "Settlement accounting",
+    "Mandate form fields",
+    "Protocol and source details",
+    "Public case JSON export"
+  ],
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "documentWidth": 375,
+    "horizontalOverflow": false
+  },
+  "browserWalletSigning": "Not independently exercised; live writes used SDK integration accounts"
+}

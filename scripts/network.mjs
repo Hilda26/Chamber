@@ -11,12 +11,15 @@ export function compactReceipt(receipt){
 }
 export const json = value => JSON.stringify(value, (key,v) => key==='receipt'?compactReceipt(v):typeof v==='bigint'?v.toString():v, 2);
 export const successful=assertSuccessfulReceipt;
+export async function retryRead(operation) {
+  for(let attempt=0;;attempt++){try{return await operation();}catch(error){if(attempt>=4)throw error;await new Promise(resolve=>setTimeout(resolve,1000*(attempt+1)));}}
+}
 export async function finalized(client, hash) {
-  const receipt = await client.waitForTransactionReceipt({ hash, status: TransactionStatus.FINALIZED, fullTransaction: true, interval: 5000, retries: 180 });
+  const receipt = await retryRead(()=>client.waitForTransactionReceipt({ hash, status: TransactionStatus.FINALIZED, fullTransaction: true, interval: 5000, retries: 180 }));
   successful(receipt);
   return receipt;
 }
 export async function read(client, address, functionName, args = []) {
-  const result = await client.readContract({ address, functionName, args, transactionHashVariant: TransactionHashVariant.LATEST_FINAL });
+  const result = await retryRead(()=>client.readContract({ address, functionName, args, transactionHashVariant: TransactionHashVariant.LATEST_FINAL }));
   return typeof result === 'string' && /^[\[{]/.test(result) ? JSON.parse(result) : result;
 }

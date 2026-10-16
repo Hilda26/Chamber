@@ -3,6 +3,7 @@ import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
 import {createAccount} from 'genlayer-js';
 import {TransactionStatus,TransactionHashVariant} from 'genlayer-js/types';
 import {clientFor,finalized,successful,addressArg,json,read} from './network.mjs';
+if(process.argv.includes("--complete")){await import("./complete-verification.mjs");process.exit(0);}
 const deployment=JSON.parse(readFileSync('src/lib/deployment.json','utf8'));
 assert.match(deployment.address,/^0x[0-9a-fA-F]{40}$/);
 const address=deployment.address;

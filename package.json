@@ -10,7 +10,8 @@
     "test:contracts": "python -m pytest tests/direct -q",
     "deploy:contract": "node scripts/deploy-contract.mjs",
     "test:live": "node scripts/verify-live.mjs",
-    "test:receipts": "node --test tests/receipts.test.mjs"
+    "test:receipts": "node --test tests/receipts.test.mjs",
+    "test:delivery": "node scripts/verify-delivery.mjs"
   },
   "dependencies": {
     "genlayer-js": "1.1.8",

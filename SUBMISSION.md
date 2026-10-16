@@ -5,6 +5,8 @@
 | Project name | CHAMBER |
 | Tagline | Accountability for the agent economy. |
 | Category | Agent infrastructure · Intelligent Contracts · Dispute resolution |
+| Live application | https://chamber-omega.vercel.app |
+| Live consensus case | https://chamber-omega.vercel.app/#case=CH-VERIFY-MVAK3DBM |
 | Repository | https://github.com/Hilda26/Chamber |
 | Network | GenLayer StudioNet, chain ID 61999 |
 | Native currency | GEN, 18 decimals; faucet-funded test GEN on StudioNet |
@@ -55,4 +57,42 @@ All evidence is public. Wallet operators identify their own agents; the applicat
 
 ## Verification scope
 
-Direct contract tests cover accounting, authorization, timing, delegation, liability, appeals, malformed model responses, and external native transfer emission. Receipt regressions cover consensus and credited EOA transfers. A separate live integration run uses fresh faucet-funded accounts and genuine GenLayer transactions; its final result and hosted checks are recorded below when completed.
+Direct contract tests cover accounting, authorization, timing, delegation, liability, appeals, malformed model responses, and external native transfer emission. Receipt regressions cover consensus and credited EOA transfers. The completed live integration run used three fresh faucet-funded accounts and genuine GenLayer transactions. The public case `CH-VERIFY-MVAK3DBM` settled after a real consensus judgment of FAILED with liable nodes 1 and 2. Both accepted operator bonds were slashed according to the agreed contract rules.
+
+- 21 submitted transactions finalized successfully.
+- 0.01 GEN cancellation refund reached the owner wallet.
+- 0.013 GEN settlement withdrawal reached the owner wallet (escrow, two slashed bonds, and returned filing bond).
+- After the contested-case verification, deposited and withdrawn totals both equalled 0.043 GEN. After the additional normal-completion run, both equal 0.051 GEN; locked funds and available credits are zero.
+- 21 direct contract tests and four receipt regression tests passed.
+- GenVM contract validation passed: four view methods and 18 write methods.
+- Production compilation and TypeScript validation passed.
+- A transient RPC connection reset occurred after the last withdrawal. Read-only completion checked every finalized transaction, credit, settlement record, wallet balance evidence, and accounting total. No financial action was substituted or simulated.
+
+Evidence: [`artifacts/live-lifecycle.json`](artifacts/live-lifecycle.json). Browser signing with an injected wallet has not been independently exercised; live writes were signed through the actual SDK with ephemeral integration wallets. Timing and appeals have direct-test coverage. Application appeals and fetched external evidence were not exercised on the live network.
+
+
+## Additional live normal-completion test
+
+Case: [CH-DELIVERY-MVAKRX74](https://chamber-omega.vercel.app/#case=CH-DELIVERY-MVAKRX74).
+
+Nine further transactions finalized successfully. The owner accepted the recorded delivery; the lead received 0.004 GEN reward plus its 0.001 GEN bond, and the delegated operator received 0.002 GEN reward plus its 0.001 GEN bond. Both native wallet balance increases were verified. The case required no consensus judgment because the owner accepted it directly. Evidence: [`artifacts/live-delivery.json`](artifacts/live-delivery.json).
+
+Combined completed live verification: **30 finalized transactions**, four verified native withdrawals, two settled mandates, and one tested cancellation/refund lifecycle. Historical diagnostic runs are explicitly separated under `artifacts/history/`.
+
+## Hosted verification
+
+The public Vercel production URL returns HTTP 200 without authentication. The downloadable Python source also returns HTTP 200 and matches the deployed source SHA-256. Browser checks verified finalized docket reads, search, authority chains, signed evidence, consensus rationale, settlement accounting, mandate form fields, public JSON record export, protocol rules, and mobile case layout at 390 × 844 with no horizontal overflow. Browser wallet signing remains a separate manual check; all live financial verification used actual SDK-signed transactions.
+
+## Submission copy
+
+**One-sentence pitch:** CHAMBER makes delegated agent work accountable through funded mandates, individual GEN bonds, GenLayer consensus judgments, and verifiable settlement.
+
+**Problem:** Agent work can pass through multiple operators while instructions, responsibility, and payment expectations become disconnected.
+
+**Solution:** Record each accepted delegation and funded reward share, preserve evidence, resolve contested fulfillment through GenLayer, and settle the corresponding GEN escrow and bonds.
+
+**Target users:** Agent operators, teams commissioning multi-agent work, and platforms that need auditable delegation and settlement.
+
+**GenLayer integration:** Python Intelligent Contract deployed on StudioNet; real network execution, independent leader/validator judgment, public contract reads, wallet-signed writes, native GEN custody, and EVM withdrawal messages.
+
+**Current release:** Working StudioNet application using test GEN. No additional platform fee in v1.0.0. No claim of audited mainnet readiness or state-court legal authority.
