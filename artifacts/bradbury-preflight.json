@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED",
+  "rpc": "https://rpc-bradbury.genlayer.com",
+  "chainId": 4221,
+  "readAccess": "VERIFIED",
+  "freshAccountBalance": "0",
+  "deploymentSubmitted": false,
+  "blocker": "No funded signing wallet available. The public faucet requires 0.01 ETH on mainnet.",
+  "faucet": "https://testnet-faucet.genlayer.foundation/",
+  "note": "StudioNet tests do not prove persistent Bradbury deployment, compatibility, or paid protocol fee handling."
+}

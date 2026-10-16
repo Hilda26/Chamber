@@ -6,6 +6,15 @@ The contract is authoritative. The web app submits signed transactions, reads fi
 
 [Live application](https://chamber-omega.vercel.app) · [Source repository](https://github.com/Hilda26/Chamber) · [Submission details](SUBMISSION.md)
 
+
+## Release status
+
+The deployed application is a working **StudioNet development release**. StudioNet executes real GenVM contracts and model consensus, but GenLayer classifies it as a temporary hosted development environment. The token amounts and verified withdrawals in this repository are **StudioNet test GEN**, not mainnet funds. The current release is not a persistent Bradbury or mainnet deployment.
+
+Bradbury RPC access was verified at chain ID 4221. Persistent Bradbury deployment requires a funded signing wallet; the public faucet requires a wallet holding 0.01 ETH on mainnet. No qualifying funded signer was available for this run. Keep private keys in your wallet or process secret manager. Browser signing, Bradbury compatibility, transaction fees, and a complete lifecycle must be checked on Bradbury before presenting that network as supported.
+
+Sources: [GenLayer networks](https://docs.genlayer.com/developers/networks), [official faucet](https://testnet-faucet.genlayer.foundation/).
+
 ## Run
 
 ```powershell
