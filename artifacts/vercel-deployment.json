@@ -1,9 +1,9 @@
 {
   "status": "READY",
   "productionUrl": "https://chamber-omega.vercel.app",
-  "deploymentUrl": "https://chamber-6yq4fc8o1-auras-projects-2f862c53.vercel.app",
-  "deploymentId": "dpl_DzhKtEV6ap8Ur9yEptZ8g2fX91JR",
-  "applicationCommit": "5b4bb25",
+  "deploymentUrl": "https://chamber-8wru24cuy-auras-projects-2f862c53.vercel.app",
+  "deploymentId": "dpl_6Q2izyitdwC6WLpzYbCuPPJSVQwq",
+  "applicationCommit": "5394c30",
   "hosting": "Vercel static export",
   "continuousGithubIntegration": false,
   "reason": "Automatic approval review rejected granting ongoing repository access; direct CLI deployment succeeded."
